@@ -1,16 +1,11 @@
 #!/bin/bash
 
-git submodule add https://github.com/austinsonger/Jenkins jenkins
-
-git submodule add https://github.com/austinsonger/Vagrant-templates vagrant-templates
-
-git submodule add https://github.com/austinsonger/Packer packer-templates
-
-git submodule add https://github.com/austinsonger/Kubernetes-configs kubernetes-templates
-
-git submodule add https://github.com/austinsonger/GithubActions github-actions
-
-git submodule add https://github.com/austinsonger/Terraform terraform-templates
+git submodule add --force https://github.com/austinsonger/Jenkins jenkins
+git submodule add --force https://github.com/austinsonger/Vagrant-templates vagrant-templates
+git submodule add --force https://github.com/austinsonger/Packer packer-templates
+git submodule add --force https://github.com/austinsonger/Kubernetes-configs kubernetes-templates
+git submodule add --force https://github.com/austinsonger/GithubActions github-actions
+git submodule add --force https://github.com/austinsonger/Terraform terraform-templates
 
 # Initialize and update the submodules
 git submodule init
