@@ -15,3 +15,6 @@
 [submodule "vagrant-base-templates"]
 	path = vagrant-base-templates
 	url = https://github.com/austinsonger/Vagrant-base-templates
+[submodule "github-actions"]
+	path = github-actions
+	url = https://github.com/austinsonger/GithubActions.git
