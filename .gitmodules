@@ -8,10 +8,6 @@
 	path = jenkins
 	url = https://github.com/austinsonger/Jenkins
 	branch = master
-[submodule "GithubActions"]
-	path = GithubActions
-	url = https://github.com/austinsonger/GithubActions
-	branch = master
 [submodule "packer-base-templates"]
 	path = packer-base-templates
 	url = https://github.com/austinsonger/Packer-base-templates
