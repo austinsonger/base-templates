@@ -5,13 +5,13 @@
 #
 #  vim:ts=2:sts=2:sw=2:et:filetype=conf
 #
-#  https://github.com/HariSekhon/Templates
+#  https://github.com/austinsonger/Templates
 #
 #  License: see accompanying Hari Sekhon LICENSE file
 #
 #  If you're using my code you're welcome to connect with me on LinkedIn and optionally send me feedback to help steer this or other code I publish
 #
-#  https://www.linkedin.com/in/HariSekhon
+#  https://www.linkedin.com/in/austinsonger
 #
 
 # Uses adjacent Redhat Kickstart, Debian Preseed & Ubuntu Autoinstaller

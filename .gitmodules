@@ -1,21 +1,21 @@
 [submodule "kubernetes-templates"]
 	path = kubernetes-templates
-	url = https://github.com/HariSekhon/Kubernetes-templates
+	url = https://github.com/austinsonger/Kubernetes-templates
 [submodule "terraform"]
 	path = terraform-templates
-	url = https://github.com/HariSekhon/Terraform-templates
+	url = https://github.com/austinsonger/Terraform-templates
 [submodule "jenkins"]
 	path = jenkins
-	url = https://github.com/HariSekhon/Jenkins
+	url = https://github.com/austinsonger/Jenkins
 	branch = master
-[submodule "github-actions"]
-	path = github-actions
-	url = https://github.com/HariSekhon/GitHub-Actions
+[submodule "GithubActions"]
+	path = GithubActions
+	url = https://github.com/austinsonger/GithubActions
 	branch = master
 [submodule "packer-templates"]
 	path = packer-templates
-	url = https://github.com/HariSekhon/Packer-templates
+	url = https://github.com/austinsonger/Packer-templates
 	branch = main
 [submodule "vagrant-templates"]
 	path = vagrant-templates
-	url = https://github.com/HariSekhon/Vagrant-templates
+	url = https://github.com/austinsonger/Vagrant-templates

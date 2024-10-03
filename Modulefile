@@ -12,10 +12,10 @@
 #  [% LINKEDIN %]
 #
 
-name 'harisekhon-mymodule'
+name 'austinsonger-mymodule'
 version '0.0.1'
-dependency 'harisekhon/etc', '1.2.3'
+dependency 'austinsonger/etc', '1.2.3'
 description ""
 author "Hari Sekhon"
-project_page "https://github.com/harisekhon"
+project_page "https://github.com/austinsonger"
 license "Apache License"

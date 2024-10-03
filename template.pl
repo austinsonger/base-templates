@@ -23,7 +23,7 @@ BEGIN {
     use File::Basename;
     use lib dirname(__FILE__) . "/lib";
 }
-use HariSekhonUtils;
+use austinsongerUtils;
 
 set_port_default(80);
 set_threshold_defaults(80, 90);

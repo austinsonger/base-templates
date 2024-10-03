@@ -71,13 +71,13 @@ ENV PYTHONUNBUFFERED 1
 
 LABEL org.opencontainers.image.description="NAME" \
       org.opencontainers.image.version="$NAME_VERSION" \
-      org.opencontainers.image.authors="Hari Sekhon (https://www.linkedin.com/in/HariSekhon)" \
-      org.opencontainers.image.url="https://ghcr.io/HariSekhon/REPO" \
-      org.opencontainers.image.documentation="https://hub.docker.com/r/harisekhon/REPO" \
-      org.opencontainers.image.source="https://github.com/HariSekhon/Dockerfiles"
+      org.opencontainers.image.authors="Hari Sekhon (https://www.linkedin.com/in/austinsonger)" \
+      org.opencontainers.image.url="https://ghcr.io/austinsonger/REPO" \
+      org.opencontainers.image.documentation="https://hub.docker.com/r/austinsonger/REPO" \
+      org.opencontainers.image.source="https://github.com/austinsonger/Dockerfiles"
       # on GHCR the image source label links to the GitHub repo so it appears in repo's packages and uses its README - then set the package to public
       # otherwise set it to DockerHub, must be lowercase or will get a 404 error
-      #org.opencontainers.image.url="https://hub.docker.com/r/harisekhon/REPO" \
+      #org.opencontainers.image.url="https://hub.docker.com/r/austinsonger/REPO" \
 
 WORKDIR /
 
@@ -95,7 +95,7 @@ WORKDIR /
 RUN apk add --no-cache bash git make
 
 RUN apk add --no-cache curl && \
-    curl -sS https://raw.githubusercontent.com/HariSekhon/DevOps-Bash-tools/master/clean_caches.sh | sh && \
+    curl -sS https://raw.githubusercontent.com/austinsonger/DevOps-Bash-tools/master/clean_caches.sh | sh && \
     apk del curl && \
     rm -fr /etc/apk/cache /var/cache/apk
 
@@ -103,7 +103,7 @@ RUN apk add --no-cache curl && \
 # CentOS
 #RUN curl http://URL/NAME.repo /etc/yum.repos.d/NAME.repo && \
 RUN yum install -y curl && \
-    curl -sS https://raw.githubusercontent.com/HariSekhon/DevOps-Bash-tools/master/clean_caches.sh | sh && \
+    curl -sS https://raw.githubusercontent.com/austinsonger/DevOps-Bash-tools/master/clean_caches.sh | sh && \
     yum remove -y curl && \
     yum autoremove -y && \
     yum clean all && \
@@ -119,7 +119,7 @@ RUN apt-get update && \
     add-apt-repository -y --update universe && \
     apt-get install -y --no-install-recommends \
         curl && \
-    curl -sS https://raw.githubusercontent.com/HariSekhon/DevOps-Bash-tools/master/clean_caches.sh | sh && \
+    curl -sS https://raw.githubusercontent.com/austinsonger/DevOps-Bash-tools/master/clean_caches.sh | sh && \
     apt-get purge -y curl && \
     apt-get autoremove -y && \
     apt-get clean && \
@@ -143,7 +143,7 @@ ENV NODE_ENV $NODE_ENV
 #
 # XXX: to minimize cache-busting on same day, regenerate this once every 12 hours (max token life) and insert into a CI/CD secret to reuse between workflow runs eg.
 #
-#   https://github.com/HariSekhon/GitHub-Actions/blob/master/.github/workflows/codeartifact_secret.yaml
+#   https://github.com/austinsonger/GithubActions/blob/master/.github/workflows/codeartifact_secret.yaml
 #
 ARG CODARTIFACT_AUTH_TOKEN
 
@@ -169,13 +169,13 @@ RUN poetry config http-basic.MYREPO aws "$CODEARTIFACT_AUTH_TOKEN" && \
 #COPY build.sh /
 # need ADD tpo source latest boostrap from github
 # nosemgrep: dockerfile.best-practice.prefer-copy-over-add.prefer-copy-over-add
-ADD https://raw.githubusercontent.com/HariSekhon/DevOps-Bash-tools/master/setup/docker_bootstrap.sh /build.sh
+ADD https://raw.githubusercontent.com/austinsonger/DevOps-Bash-tools/master/setup/docker_bootstrap.sh /build.sh
 
 RUN chmod +x /build.sh && /build.sh
 
 # Cache Bust upon new commits
 # nosemgrep: dockerfile.best-practice.prefer-copy-over-add.prefer-copy-over-add
-ADD https://api.github.com/repos/HariSekhon/DevOps-Python-tools/git/refs/heads/master /.git-hashref
+ADD https://api.github.com/repos/austinsonger/DevOps-Python-tools/git/refs/heads/master /.git-hashref
 
 # 2nd run is almost a noop without cache, and only an incremental update upon cache bust
 RUN /build.sh

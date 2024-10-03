@@ -4,13 +4,13 @@
 #
 #  vim:ts=2:sts=2:sw=2:et
 #
-#  https://github.com/HariSekhon/Templates
+#  https://github.com/austinsonger/Templates
 #
 #  License: see accompanying Hari Sekhon LICENSE file
 #
 #  If you're using my code you're welcome to connect with me on LinkedIn and optionally send me feedback to help steer this or other code I publish
 #
-#  https://www.linkedin.com/in/HariSekhon
+#  https://www.linkedin.com/in/austinsonger
 #
 
 # ============================================================================ #
@@ -82,7 +82,7 @@ build:
       #    paths:
       #      - .
 deploy:
-  # prevents .kube/config context switching race condition - see also KUBECONFIG isolation trick in https://github.com/HariSekhon/Kubernetes-configs/blob/master/.envrc
+  # prevents .kube/config context switching race condition - see also KUBECONFIG isolation trick in https://github.com/austinsonger/Kubernetes-configs/blob/master/.envrc
   # could also use skaffold --kube-context
   kubeContext: CONTEXT  # XXX: Edit
   statusCheck: true     # set to false to disable checking 'kubectl rollout status'

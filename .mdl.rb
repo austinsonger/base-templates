@@ -4,13 +4,13 @@
 #  Author: Hari Sekhon
 #  Date: 2024-08-22 01:58:12 +0200 (Thu, 22 Aug 2024)
 #
-#  https///github.com/HariSekhon/Templates
+#  https///github.com/austinsonger/Templates
 #
 #  License: see accompanying Hari Sekhon LICENSE file
 #
 #  If you're using my code you're welcome to connect with me on LinkedIn and optionally send me feedback to help steer this or other code I publish
 #
-#  https://www.linkedin.com/in/HariSekhon
+#  https://www.linkedin.com/in/austinsonger
 #
 
 all

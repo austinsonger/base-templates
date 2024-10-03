@@ -6,13 +6,13 @@
 #
 #  vim:ts=2:sts=2:sw=2:et:filetype=yaml
 #
-#  https://github.com/HariSekhon/Templates
+#  https://github.com/austinsonger/Templates
 #
 #  License: see accompanying Hari Sekhon LICENSE file
 #
 #  If you're using my code you're welcome to connect with me on LinkedIn and optionally send me feedback to help steer this or other code I publish
 #
-#  https://www.linkedin.com/in/HariSekhon
+#  https://www.linkedin.com/in/austinsonger
 #
 
 # ============================================================================ #
@@ -59,7 +59,7 @@ autoinstall:
   late-commands:
     - 'echo "packer ALL=(ALL) NOPASSWD: ALL" > /target/etc/sudoers.d/packer'
     # Import my SSH key from GitHub
-    - curtin in-target --target=/target -- ssh-import-id gh:harisekhon
+    - curtin in-target --target=/target -- ssh-import-id gh:austinsonger
     - printf "%-30s %s\n" "Build Date:" "`date`" >> /target/etc/build_release
     #- sed -i 's/^ca:/#ca:/' /target/etc/inittab
   locale: en_GB.UTF-8
@@ -133,8 +133,8 @@ autoinstall:
     allow-pw: true
     allow_public_ssh_keys: true
     authorized-keys:
-      - 'ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAvihSRU+YjBKvKiacDfUoZ7ghoVMcwNh4cWIYUNFGZosXOzNtyOcBpIb71TCgLFhOd+aMWKXCEC67BpNSIjt+a/FLD27AwmgVHv6cPlE3G0JJ9zmIrNmx9511dshTsxUW2O0SbYG+3InuO7FUkSrld+kA1OucyjgmZU7/+Cs9shpAEOaIVYmGlpDGRucAHpwtckvdgRTtnA3WNZ/Qg1vU6Ik4Xm03vjrW6lSiuTffYO1kbdcMQ4IZBlzfmovOtXQ0PomvN5NMCpgOyQuoNlvyS11tOXoqNiWOkiLE15XEzAQth9hHbNiH8jHJbAtkHqWWh0KK4IUyNGvoL6QfNxsTlw== harisekhon@github/3807063 # ssh-import-id gh:harisekhon'
-      - 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDQe6MuFOGBezYp/PoAr0x4ptWVFlkYyE6VVooEQ1DpQ5tcOcrsFIX/qW7nnZkOUsjxpXSN90sNrP7uOUa0IaU5MxDE0mMr+13HXUUmloA5HbIdbRi2wGTGaXE/uVXBEZKeD6+LD1AHM8dgEOgWF/j+XUQ0zcarg6Q45bE54my+9pWwQzciVa8LVdRYK+Rct5YR6Vo2cbjYAZ44G4d0Fq/k6nYwd0UhQfYcXP7R+bPBiiXDrECK/xn/OauYVY2QunfcfKyVBAWgpTkCDi+Nw6GFvgHwTd7WJ/IqZy9Lqyz2ymqn2yRyiHiKlH65+5RuP+9otpx9YshuBUyRrF4NGhNfm9LQ9vbckpk67h7I8w4nkh6w77N6wg+dlDDv42H6dPpX0IrSLmEsxeCWp5W+C4rHSlw62Yhsw2nO2bw251Qyb/UwGTk87pxg9jLjlp5YL0bcwONYX0ZSUPNoId4z1FNKcOmo1B5oRmwyQq2ua9hvieMhivQpqHa7IxB8MPOOtY8= harisekhon@github/76141680 # ssh-import-id gh:harisekhon'
+      - 'ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAvihSRU+YjBKvKiacDfUoZ7ghoVMcwNh4cWIYUNFGZosXOzNtyOcBpIb71TCgLFhOd+aMWKXCEC67BpNSIjt+a/FLD27AwmgVHv6cPlE3G0JJ9zmIrNmx9511dshTsxUW2O0SbYG+3InuO7FUkSrld+kA1OucyjgmZU7/+Cs9shpAEOaIVYmGlpDGRucAHpwtckvdgRTtnA3WNZ/Qg1vU6Ik4Xm03vjrW6lSiuTffYO1kbdcMQ4IZBlzfmovOtXQ0PomvN5NMCpgOyQuoNlvyS11tOXoqNiWOkiLE15XEzAQth9hHbNiH8jHJbAtkHqWWh0KK4IUyNGvoL6QfNxsTlw== austinsonger@github/3807063 # ssh-import-id gh:austinsonger'
+      - 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDQe6MuFOGBezYp/PoAr0x4ptWVFlkYyE6VVooEQ1DpQ5tcOcrsFIX/qW7nnZkOUsjxpXSN90sNrP7uOUa0IaU5MxDE0mMr+13HXUUmloA5HbIdbRi2wGTGaXE/uVXBEZKeD6+LD1AHM8dgEOgWF/j+XUQ0zcarg6Q45bE54my+9pWwQzciVa8LVdRYK+Rct5YR6Vo2cbjYAZ44G4d0Fq/k6nYwd0UhQfYcXP7R+bPBiiXDrECK/xn/OauYVY2QunfcfKyVBAWgpTkCDi+Nw6GFvgHwTd7WJ/IqZy9Lqyz2ymqn2yRyiHiKlH65+5RuP+9otpx9YshuBUyRrF4NGhNfm9LQ9vbckpk67h7I8w4nkh6w77N6wg+dlDDv42H6dPpX0IrSLmEsxeCWp5W+C4rHSlw62Yhsw2nO2bw251Qyb/UwGTk87pxg9jLjlp5YL0bcwONYX0ZSUPNoId4z1FNKcOmo1B5oRmwyQq2ua9hvieMhivQpqHa7IxB8MPOOtY8= austinsonger@github/76141680 # ssh-import-id gh:austinsonger'
     install-server: true
   storage:
     layout:

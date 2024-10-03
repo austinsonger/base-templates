@@ -34,7 +34,7 @@ apply plugin: 'groovy'
 //apply plugin: 'maven' // deprecated
 apply plugin: 'application'
 
-project.group = 'com.linkedin.harisekhon'
+project.group = 'com.linkedin.austinsonger'
 // https://docs.gradle.org/current/dsl/org.gradle.api.Project.html
 // - base name to use for archive files - added by 'java' plugin
 // - jar base name?
@@ -42,7 +42,7 @@ project.group = 'com.linkedin.harisekhon'
 project.version = '0.1'
 
 // requires apply plugin: 'application'
-mainClassName = 'com.github.harisekhon.[% NAME %].Main'
+mainClassName = 'com.github.austinsonger.[% NAME %].Main'
 
 sourceCompatibility = 1.7
 targetCompatibility = 1.7

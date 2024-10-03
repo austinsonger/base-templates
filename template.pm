@@ -23,7 +23,7 @@ BEGIN {
     use File::Basename;
     use lib dirname(__FILE__) . "/..";
 }
-use HariSekhonUtils;
+use austinsongerUtils;
 use Carp;
 
 use Exporter;

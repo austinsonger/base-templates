@@ -179,7 +179,7 @@ steps:
       - --cache-from=${_IMAGE}:staging  # explicitly try from staging and production branche latest too because reverts in lower environments will match these and reuse them as cache
       - --cache-from=${_IMAGE}:production
       #
-      # Multi-stage layer caching - CloudBuild still doesn't support --cache-to as of Jan 2022 (GitHub Actions -> Docker action does, see my GitHub-Actions repo's reusable Docker workflows)
+      # Multi-stage layer caching - CloudBuild still doesn't support --cache-to as of Jan 2022 (GitHub Actions -> Docker action does, see my GithubActions repo's reusable Docker workflows)
       #- --cache-to=type=registry,ref=${_IMAGE}:buildcache_${_GIT_BRANCH}_${_GIT_TAG},mode=max
       #- --tag=${_IMAGE}:buildcache_${_GIT_BRANCH}_${_GIT_TAG}
       #- --cache-from=${_IMAGE}:buildcache_${_GIT_BRANCH}_${_GIT_TAG}

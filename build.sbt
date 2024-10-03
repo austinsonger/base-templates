@@ -24,7 +24,7 @@ scalaVersion := "2.10.4"
 
 //unmanagedBase := baseDirectory.value / "lib/target"
 
-mainClass := Some("com.linkedin.harisekhon.[% NAME % ].Main")
+mainClass := Some("com.linkedin.austinsonger.[% NAME % ].Main")
 
 unmanagedClasspath in Test += baseDirectory.value / "special-resources"
 

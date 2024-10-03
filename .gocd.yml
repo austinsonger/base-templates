@@ -3,13 +3,13 @@
 #  Author: Hari Sekhon
 #  Date: 2020-03-21 11:14:07 +0000 (Sat, 21 Mar 2020)
 #
-#  https://github.com/HariSekhon/Templates
+#  https://github.com/austinsonger/Templates
 #
 #  License: see accompanying Hari Sekhon LICENSE file
 #
 #  If you're using my code you're welcome to connect with me on LinkedIn and optionally send me feedback to help improve or steer this or other code I publish
 #
-#  https://www.linkedin.com/in/HariSekhon
+#  https://www.linkedin.com/in/austinsonger
 #
 
 # ============================================================================ #
@@ -30,7 +30,7 @@ pipelines:
     display_order: -1
     materials:
       git:
-        git: https://github.com/HariSekhon/DevOps-Bash-tools  # XXX: Edit
+        git: https://github.com/austinsonger/DevOps-Bash-tools  # XXX: Edit
         shallow_clone: false
         auto_update: true
         branch: master

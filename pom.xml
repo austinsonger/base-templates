@@ -21,7 +21,7 @@
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.linkedin.harisekhon</groupId>
+  <groupId>com.linkedin.austinsonger</groupId>
   <!-- XXX: uncomment after template replacement - this is just to pass XML validation in templates library
   <artifactId>[% NAME %]</artifactId>
   -->
@@ -30,21 +30,21 @@
   <packaging>jar</packaging>
 
   <name>[% NAME %]</name>
-  <url>https://github.com/harisekhon/[% NAME %]</url>
+  <url>https://github.com/austinsonger/[% NAME %]</url>
   <issueManagement>
     <system>GitHub</system>
-    <url>https://github.com/harisekhon/[% NAME %]/issues</url>
+    <url>https://github.com/austinsonger/[% NAME %]/issues</url>
   </issueManagement>
   <scm>
     <!-- for consistency with sonar-project.properties
     <connection>scm:svn:http://somerepository.com/svn_repo/trunk</connection>
     <developerConnection>scm:svn:https://somerepository.com/svn_repo/trunk</developerConnection>
     -->
-    <url>https://github.com/harisekhon/[% NAME %]</url>
+    <url>https://github.com/austinsonger/[% NAME %]</url>
   </scm>
   <ciManagement>
     <system>Travis CI</system>
-    <url>https://travis-ci.org/HariSekhon/[% NAME %]</url>
+    <url>https://travis-ci.org/austinsonger/[% NAME %]</url>
   </ciManagement>
 
   <!-- requires 'pom' as packaging, not jar
@@ -55,7 +55,7 @@
   In the module's pom.xml, put the following - this will mean it won't need to list any deps as they're handled in this pom:
   <parent>
     <artifactId>myParent</artifactId>
-    <groupId>com.linkedin.harisekhon</groupId>
+    <groupId>com.linkedin.austinsonger</groupId>
     <version>0.1</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
@@ -111,7 +111,7 @@
   <dependencies>
 
     <dependency>
-      <groupId>com.linkedin.harisekhon</groupId>
+      <groupId>com.linkedin.austinsonger</groupId>
       <artifactId>utils</artifactId>
       <version>1.0</version>
     </dependency>
@@ -368,7 +368,7 @@
             <manifest>
               <addClasspath>true</addClasspath>
               <classpathPrefix>lib/</classpathPrefix>
-              <mainClass>com.linkedin.harisekhon.[% NAME %]</mainClass>
+              <mainClass>com.linkedin.austinsonger.[% NAME %]</mainClass>
             </manifest>
           </archive>
         </configuration>
@@ -405,7 +405,7 @@
         <artifactId>exec-maven-plugin</artifactId>
         <version>${exec-maven-plugin.version}</version>
         <configuration>
-          <mainClass>com.linkedin.harisekhon.TODO</mainClass>
+          <mainClass>com.linkedin.austinsonger.TODO</mainClass>
         </configuration>
       </plugin>
 

@@ -2,7 +2,7 @@
 #  Author: Hari Sekhon
 #  Date: 2013-11-03 03:58:28 +0000 (Sun, 03 Nov 2013)
 #
-#  http://github.com/harisekhon
+#  http://github.com/austinsonger
 #
 #  License: see accompanying LICENSE file
 #
@@ -17,7 +17,7 @@ BEGIN {
     use File::Basename;
     use lib dirname(__FILE__) . "..";
 }
-use HariSekhonUtils;
+use austinsongerUtils;
 use Carp;
 
 use Exporter;

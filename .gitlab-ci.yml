@@ -3,14 +3,14 @@
 #  Author: Hari Sekhon
 #  Date: Sun Feb 23 19:02:10 2020 +0000
 #
-#  https://github.com/HariSekhon/Templates
+#  https://github.com/austinsonger/Templates
 #
 #  License: see accompanying Hari Sekhon LICENSE file
 #
 #  If you're using my code you're welcome to connect with me on LinkedIn and optionally send me feedback
 #  to help improve or steer this or other code I publish
 #
-#  https://www.linkedin.com/in/HariSekhon
+#  https://www.linkedin.com/in/austinsonger
 #
 
 # ============================================================================ #
@@ -25,10 +25,10 @@ image: ubuntu:22.04
 
 # reuable components sourced from adjacent GitLab CI shared repo
 #include:
-#  - project: 'harisekhon/gitlab-ci'
+#  - project: 'austinsonger/gitlab-ci'
 #    ref: main
 #    file: '/docker/before_script.yml'
-#  - project: 'harisekhon/gitlab-ci'
+#  - project: 'austinsonger/gitlab-ci'
 #    ref: main
 #    file: '/docker/build.yml'
 #

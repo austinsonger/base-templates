@@ -5,14 +5,14 @@
 #  Author: Hari Sekhon
 #  Date: [% DATE  # 2023-04-14 13:54:52 +0100 (Fri, 14 Apr 2023) %]
 #
-#  [% URL # https://github.com/HariSekhon/Templates %]
+#  [% URL # https://github.com/austinsonger/Templates %]
 #
 #  License: see accompanying Hari Sekhon LICENSE file
 #
 #  If you're using my code you're welcome to connect with me on LinkedIn
 #  and optionally send me feedback to help steer this or other code I publish
 #
-#  https://www.linkedin.com/in/HariSekhon
+#  https://www.linkedin.com/in/austinsonger
 #
 
 """
@@ -262,7 +262,7 @@ from diagrams.custom import Custom
 
 # Examples:
 #
-#   https://github.com/HariSekhon/Diagrams-as-Code
+#   https://github.com/austinsonger/Diagrams-as-Code
 #
 #   https://diagrams.mingrammer.com/docs/getting-started/examples
 
@@ -310,7 +310,7 @@ with Diagram('[% NAME %]',
 
     # Group nodes using a Python list[]
     #
-    #   https://github.com/HariSekhon/Diagrams-as-Code/blob/master/aws_load_balanced_web_farm.py
+    #   https://github.com/austinsonger/Diagrams-as-Code/blob/master/aws_load_balanced_web_farm.py
     #
     with Cluster("Web Services"):
         svc_group = [EC2("web1"),
@@ -326,19 +326,19 @@ with Diagram('[% NAME %]',
 # ============================================================================ #
 # Clustered node examples:
 #
-#   https://github.com/HariSekhon/Diagrams-as-Code/blob/master/aws_web_service_db_cluster.py
+#   https://github.com/austinsonger/Diagrams-as-Code/blob/master/aws_web_service_db_cluster.py
 #
-#   https://github.com/HariSekhon/Diagrams-as-Code/blob/master/aws_clustered_web_services.py
+#   https://github.com/austinsonger/Diagrams-as-Code/blob/master/aws_clustered_web_services.py
 #
-#   https://github.com/HariSekhon/Diagrams-as-Code/blob/master/gcp_pubsub_analytics.py
+#   https://github.com/austinsonger/Diagrams-as-Code/blob/master/gcp_pubsub_analytics.py
 #
-#   https://github.com/HariSekhon/Diagrams-as-Code/blob/master/kubernetes_deployment_hpa_ingress.py
+#   https://github.com/austinsonger/Diagrams-as-Code/blob/master/kubernetes_deployment_hpa_ingress.py
 #
-#   https://github.com/HariSekhon/Diagrams-as-Code/blob/master/kubernetes_stateful_architecture.py
+#   https://github.com/austinsonger/Diagrams-as-Code/blob/master/kubernetes_stateful_architecture.py
 #
 # Nested Clusters:
 #
-#   https://github.com/HariSekhon/Diagrams-as-Code/blob/master/aws_event_processing.py
+#   https://github.com/austinsonger/Diagrams-as-Code/blob/master/aws_event_processing.py
 
 # ============================================================================ #
 # Edge is an object representing a connection between Nodes with some additional properties
@@ -347,12 +347,12 @@ with Diagram('[% NAME %]',
 
 # Example with fancy edges between nodes:
 #
-#   https://github.com/HariSekhon/Diagrams-as-Code/blob/master/advanced_web_services_open_source.py
+#   https://github.com/austinsonger/Diagrams-as-Code/blob/master/advanced_web_services_open_source.py
 
 # ============================================================================ #
 # Download an image to be used in a Custom node
 #
-#   https://github.com/HariSekhon/Diagrams-as-Code/blob/master/rabbitmq_broker_with_custom_icon.py
+#   https://github.com/austinsonger/Diagrams-as-Code/blob/master/rabbitmq_broker_with_custom_icon.py
 #
 # pylint: disable=C0103
 #rabbitmq_url = "https://jpadilla.github.io/rabbitmqapp/assets/img/icon.png"

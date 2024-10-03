@@ -4,13 +4,13 @@
 #
 #  vim:ts=2:sts=2:sw=2:et
 #
-#  https://github.com/HariSekhon/Templates
+#  https://github.com/austinsonger/Templates
 #
 #  License: see accompanying Hari Sekhon LICENSE file
 #
 #  If you're using my code you're welcome to connect with me on LinkedIn and optionally send me feedback to help steer this or other code I publish
 #
-#  https://www.linkedin.com/in/HariSekhon
+#  https://www.linkedin.com/in/austinsonger
 #
 
 # ============================================================================ #
@@ -54,7 +54,7 @@ on_finish:
   #
   #     https://github.com/appveyor/ci/pull/3385
   #
-  #- sh: curl -sflL 'https://raw.githubusercontent.com/HariSekhon/Templates/master/install/install_openssh.sh' | bash -e -
+  #- sh: curl -sflL 'https://raw.githubusercontent.com/austinsonger/Templates/master/install/install_openssh.sh' | bash -e -
   #
   # https://www.appveyor.com/docs/how-to/ssh-to-build-worker/
   - sh: if [ "$APPVEYOR_SSH_BLOCK" = true ]; then curl -sflL 'https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-ssh.sh' | bash -e -; fi

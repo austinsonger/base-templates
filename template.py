@@ -41,12 +41,12 @@ libdir = os.path.join(srcdir, 'pylib')
 sys.path.append(libdir)
 try:
     # pylint: disable=wrong-import-position
-    from harisekhon.utils import log
-    #from harisekhon.utils import CriticalError, UnknownError
-    from harisekhon.utils import validate_host, validate_port, validate_user, validate_password
-    from harisekhon.utils import isStr
-    from harisekhon import CLI
-    from harisekhon import RestNagiosPlugin
+    from austinsonger.utils import log
+    #from austinsonger.utils import CriticalError, UnknownError
+    from austinsonger.utils import validate_host, validate_port, validate_user, validate_password
+    from austinsonger.utils import isStr
+    from austinsonger import CLI
+    from austinsonger import RestNagiosPlugin
 except ImportError as _:
     print(traceback.format_exc(), end='')
     sys.exit(4)

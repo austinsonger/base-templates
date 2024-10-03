@@ -8,7 +8,7 @@ ifdef(<!PLUGIN!>, <!# nagios: -epn!>, <!dnl!>)
 #  Author: Hari Sekhon
 #  Date: 2011-05-05 16:46:58 +0100 (Thu, 05 May 2011)
 #
-#  http://github.com/harisekhon
+#  http://github.com/austinsonger
 #
 #  License: see accompanying LICENSE file
 #
@@ -26,7 +26,7 @@ BEGIN {
     use File::Basename;
     use lib dirname<!!>(__FILE__) . "/lib";
 }
-use HariSekhonUtils;
+use austinsongerUtils;
 dnl#Getopt::Long::Configure ("no_bundling");
 
 set_port_default(80);

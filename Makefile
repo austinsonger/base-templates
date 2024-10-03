@@ -13,7 +13,7 @@
 
 # For serious Makefiles see the DevOps Bash tools repo:
 #
-#	https://github.com/HariSekhon/DevOps-Bash-tools
+#	https://github.com/austinsonger/DevOps-Bash-tools
 #
 #	Makefile
 #	Makefile.in - generic include file with lots of Make targets
@@ -49,13 +49,13 @@ init:  ## run init to pull / update git submodules
 	@echo
 
 .PHONY: bash-tools
-bash-tools:  ## download and bootstrap HariSekhon/DevOps-Bash-tools
+bash-tools:  ## download and bootstrap austinsonger/DevOps-Bash-tools
 	@if ! command -v check_pytools.sh; then \
 		curl -L https://git.io/bash-bootstrap | sh; \
 	fi
 
 .PHONY: test
-test: bash-tools  ## run tests - download HariSekhon/DevOps-Bash-tools and run pytools tests
+test: bash-tools  ## run tests - download austinsonger/DevOps-Bash-tools and run pytools tests
 	@echo "running tests:"
 	check_pytools.sh
 

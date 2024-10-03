@@ -33,7 +33,7 @@ services:
     #extends:
     #  file: common.yml
     #  service: common
-    image: harisekhon/[% NAME %]:${VERSION:-latest}
+    image: austinsonger/[% NAME %]:${VERSION:-latest}
     ports:
       # host:container
       - "8080:80"

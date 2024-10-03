@@ -20,9 +20,9 @@ use Test::More;
 use File::Basename;
 BEGIN {
     use lib dirname(__FILE__) . "/..";
-    use_ok('HariSekhon::NAME');
+    use_ok('austinsonger::NAME');
 }
-require_ok('HariSekhon::NAME');
+require_ok('austinsonger::NAME');
 
 
 done_testing();
