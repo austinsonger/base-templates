@@ -1,2 +1,20 @@
 
 
+[submodule "jenkins"]
+	path = jenkins
+	url = https://github.com/austinsonger/Jenkins
+[submodule "vagrant-templates"]
+	path = vagrant-templates
+	url = https://github.com/austinsonger/Vagrant-templates
+[submodule "packer-templates"]
+	path = packer-templates
+	url = https://github.com/austinsonger/Packer
+[submodule "kubernetes-templates"]
+	path = kubernetes-templates
+	url = https://github.com/austinsonger/Kubernetes-configs
+[submodule "github-actions"]
+	path = github-actions
+	url = https://github.com/austinsonger/GithubActions
+[submodule "terraform-templates"]
+	path = terraform-templates
+	url = https://github.com/austinsonger/Terraform
