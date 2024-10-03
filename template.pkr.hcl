@@ -5,7 +5,7 @@
 #
 #  vim:ts=2:sts=2:sw=2:et:filetype=conf
 #
-#  https://github.com/austinsonger/Templates
+#  https://github.com/austinsonger/base-templates
 #
 #  License: see accompanying Hari Sekhon LICENSE file
 #
@@ -62,7 +62,7 @@ packer {
 #                               V a r i a b l e s
 # ============================================================================ #
 
-# https://developer.hashicorp.com/packer/docs/templates/hcl_templates/variables
+# https://developer.hashicorp.com/packer/docs/base-templates/hcl_base-templates/variables
 
 #   -var-files values.pkrvars.hcl  containing foo = "value"
 #   *.auto.pkrvars.hcl
@@ -155,7 +155,7 @@ variable "image_metadata" {
 #                         L o c a l   V a r i a b l e s
 # ============================================================================ #
 
-# https://developer.hashicorp.com/packer/docs/templates/hcl_templates/locals
+# https://developer.hashicorp.com/packer/docs/base-templates/hcl_base-templates/locals
 
 # locals are like constants and unlike variables cannot be overridden at runtime
 
@@ -209,7 +209,7 @@ local "mylocal" {
 #                            D a t a   S o u r c e s
 # ============================================================================ #
 
-# https://developer.hashicorp.com/packer/docs/templates/hcl_templates/datasources
+# https://developer.hashicorp.com/packer/docs/base-templates/hcl_base-templates/datasources
 
 # locals can access data sources but data sources cannot access locals, to prevent circular dependencies
 
@@ -658,7 +658,7 @@ build {
   # https://developer.hashicorp.com/packer/docs/provisioners/shell-local
   #
   provisioner "shell-local" {
-    # https://developer.hashicorp.com/packer/docs/templates/hcl_templates/contextual-variables
+    # https://developer.hashicorp.com/packer/docs/base-templates/hcl_base-templates/contextual-variables
     # can access:
     #   source variables name and type
     #   build variables name, ID, Host, Port, User and Password (for passing to Ansible),

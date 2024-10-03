@@ -3,7 +3,7 @@
 #  Author: Hari Sekhon
 #  Date: Sun Feb 23 19:02:10 2020 +0000
 #
-#  https://github.com/austinsonger/Templates
+#  https://github.com/austinsonger/base-templates
 #
 #  License: see accompanying Hari Sekhon LICENSE file
 #
@@ -21,7 +21,7 @@
 
 # By using a template with extends, users can only make limited changes via pre-approved parameters
 
-# https://learn.microsoft.com/en-us/azure/devops/pipelines/process/templates
+# https://learn.microsoft.com/en-us/azure/devops/pipelines/process/base-templates
 
 ---
 parameters:
@@ -97,7 +97,7 @@ steps:
 
                 displayName: 'Disabled by template: ${{ step.displayName }}'
 
-  # https://learn.microsoft.com/en-us/azure/devops/pipelines/security/templates?view=azure-devops
+  # https://learn.microsoft.com/en-us/azure/devops/pipelines/security/base-templates?view=azure-devops
   #  make the user steps run in the container
   - script: echo Run inside builder labelled container to limit its access
     target: builder
@@ -114,13 +114,13 @@ steps:
 #  # pin the extends to a given tag to prevent existing pipelines from inheriting breaking changes
 #  resources:
 #    repositories:
-#    - repository: templates
+#    - repository: base-templates
 #      type: git
-#      name: MyProject/MyTemplates
+#      name: MyProject/Mybase-templates
 #      ref: refs/tags/v1
 #
 #  extends:
-#    template: template.yml@templates
+#    template: template.yml@base-templates
 #    parameters:
 #      usersteps:
 #      - script: echo This is my first step

@@ -4,7 +4,7 @@
 #
 #  vim:ts=2:sts=2:sw=2:et
 #
-#  https://github.com/austinsonger/Templates
+#  https://github.com/austinsonger/base-templates
 #
 #  License: see accompanying Hari Sekhon LICENSE file
 #
@@ -17,7 +17,7 @@
 #                                H e l m f i l e
 # ============================================================================ #
 
-# You should probably see kustomization.yaml instead under kubernetes-templates submodule
+# You should probably see kustomization.yaml instead under kubernetes-base-templates submodule
 
 # https://github.com/helmfile/helmfile
 
@@ -238,8 +238,8 @@ environments:
 # Helmfile merges all the "base" state files and this state file before processing.
 #
 # Assuming this state file is named `helmfile.yaml`, all the files are merged in the order of:
-#   environments.yaml <- defaults.yaml <- templates.yaml <- helmfile.yaml
+#   environments.yaml <- defaults.yaml <- base-templates.yaml <- helmfile.yaml
 bases:
   - environments.yaml
   - defaults.yaml
-  - templates.yaml
+  - base-templates.yaml

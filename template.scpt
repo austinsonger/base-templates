@@ -4,7 +4,7 @@
 #  Author: Hari Sekhon
 #  Date: [% DATE  # 2020-06-13 20:47:12 +0100 (Sat, 13 Jun 2020) %]
 #
-#  [% URL  # https://github.com/austinsonger/Templates %]
+#  [% URL  # https://github.com/austinsonger/base-templates %]
 #
 #  License: see accompanying Hari Sekhon LICENSE file
 #

@@ -22,7 +22,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.linkedin.austinsonger</groupId>
-  <!-- XXX: uncomment after template replacement - this is just to pass XML validation in templates library
+  <!-- XXX: uncomment after template replacement - this is just to pass XML validation in base-templates library
   <artifactId>[% NAME %]</artifactId>
   -->
   <artifactId>NAME</artifactId>
